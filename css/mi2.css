@@ -1,0 +1,421 @@
+.nav{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #333;
+}
+.nav .left,.nav li{
+    float: left;
+}
+.nav .middle,.nav .right{
+    float: right;
+}
+.navz a{
+    color: #b0b0b0;
+    font-size: 12px;
+    display: block;
+}
+.navz .line{
+    width: 1px;
+    height: 13px;
+    background-color: #424242;
+    margin: 13.5px 8px 0;
+}
+.navz a:hover{
+    color: white;
+}
+.right a{
+    width: 120px;
+    background-color: #424242;
+    text-align: center;
+}
+.right i{
+    margin-right: 2px;
+}
+.right:hover a{
+    background-color: #fff;
+    color: #ff6700;
+}
+.right{
+    margin-left: 20px;
+}
+.xiala{
+    /* display: none; */
+    width: 124px;
+    /* height: 148px; */
+    height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    /* top: 40px; */
+    left: -40px;
+    line-height: 1px;
+    text-align: center;
+    transition: height 0.3s;
+    z-index: 999;
+}
+.xiala img{
+    width: 90px;
+    margin: 17px;
+    margin-top: 10px;
+}
+.xiala span{
+    color: #000;
+    font-size: 14px;
+}
+.app{
+    position: relative;
+}
+.app::after{
+    display: none;
+    content: '';
+    /* display: block; */
+    width: 0;
+    height: 0;
+    border: solid 7px transparent;
+    border-top: none;
+    border-bottom-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.app:hover .xiala,.app:hover::after{
+    height: 148px;
+    display: block;
+}
+.da{
+    position: relative;
+}
+.da .xiala2{
+    /* display: none; */
+    width: 300px;
+    /* height: 100px; */
+    height: 0;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    line-height: 100px;
+    position: absolute;
+    left: -180px;
+    color: black;
+    font-size: 12px;
+    transition: height 0.3s;
+    z-index: 2;
+}
+.da:hover .xiala2{
+    display: block;
+    height: 100px;
+}
+.wrapper-header{
+    /* background-color: teal; */
+    position: relative;
+}
+.header{
+    height: 100px;
+    /* background-color: red; */
+}
+.header .logo{
+    float: left;
+    width: 55px;
+    height: 55px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 22.5px;
+    text-indent: -666px;
+}
+.header .logo a{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: 0;
+    /* background-color: #ff6700; */
+    background-image: url(../img/logo-mi2.png);
+    background-position: center;
+    background-size: cover;
+    transition: left 0.3s;
+}
+.header .logo .home{
+    left: -55px;
+    background-image: url(../img/OIP-C.jpg);
+}
+.header .logo:hover .mi{
+    left: 55px;
+}
+.header .logo:hover .home{
+    left: 0;
+}
+.header .na{
+    float: left;
+    margin-left: 7px;
+    padding-left: 58px;
+}
+.header .na > li{
+    float: left;
+    line-height: 100px;
+    /* margin-right: 20px; */
+    padding-right: 20px;
+}
+.header .na li a{
+    /* display: block; */
+    font-size: 16px;
+    color: black;
+    /* margin-top: 12px; */
+    /* padding: 30px 10px 0px; */
+}
+.all-goods{
+    visibility: hidden;
+}
+.na li a:hover{
+    color: #ff6700;
+}
+.na .goods-info{
+    width: 100%;
+    /* height: 228px; */
+    height: 0;
+    overflow: hidden;
+    background-color: white;
+    /* border-top: rgb(224, 224, 224) solid 1px; */
+    position: absolute;
+    top: 100px;
+    left: 0;
+    /* box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2); */
+    transition: height 0.3s;
+    z-index: 999;
+}
+/* :not(:first-of-type):not(:nth-child(9)):not(:nth-child(10)) */
+.na .show-goods:hover ~ .goods-info,
+.goods-info:hover{
+    height: 228px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    border-top: rgb(224, 224, 224) solid 1px;
+}
+.search-wrapper{
+    width: 296px;
+    height: 50px;
+    /* background-color: red; */
+    float: right;
+    margin-top: 25px;
+    border: 1px solid rgb(224, 224, 224);
+    /* outline: rgb(224, 224, 224) 1px solid; */
+}
+.search-inp{
+    float: left;
+    height: 50px;
+    width: 224px;
+    border: none;
+    padding: 0;
+    padding: 0 10px;
+    outline: none;
+}
+.search-btn{
+    float: left;
+    width: 52px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    padding: 0;
+    font-size: 16px;
+    border-left: solid 1px rgb(224, 224, 224);
+}
+.xiala3{
+    display: none;
+    width: 244px;
+    height: 235px;
+    background-color: #fff;
+    float: left;
+    margin-left: -1px;
+    border: 1px solid rgb(224, 224, 224);
+    position: absolute;
+    top: 76px;
+    z-index: 2;
+}
+.xiala3 a{
+    display: block;
+    font-size: 12px;
+    padding-left: 15px;
+    line-height: 30px;
+}
+.xiala3 li:hover{
+    background-color: rgb(218, 217, 217);
+}
+.search-wrapper:hover .xiala3{
+    display: block;
+    border: 1px solid red;
+}
+.search-wrapper:hover{
+    border: 1px solid red;
+}
+.search-wrapper:hover .search-btn{
+    border-left: 1px solid red;
+}
+.search-wrapper .search-btn:hover{
+    background-color: #ff6700;
+    color: white;
+}
+.na .left-menu{
+    /* display: none; */
+    width: 234px;
+    height: 420px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px 0;
+    position: absolute;
+    z-index: 100;
+    left: -120px;
+    line-height: 1;
+}
+.na .all-goods-wrapper{
+    position: relative;
+}
+.na .left-menu li a{
+    display: block;
+    color: white;
+    font-size: 16px;
+    line-height: 42px;
+    padding: 0 30px;
+}
+.na .left-menu li i{
+    float: right;
+    line-height: 42px;
+}
+/* .na .all-goods-wrapper:hover .left-menu{
+    display: block;
+} */
+.na .left-menu li a:hover{
+    color: white;
+    background-color: #ff6700;
+}
+.banner{
+    position: relative;
+    height: 460px;
+}
+.banner img{
+    width: 100%;
+    vertical-align: top;
+}
+.banner li{
+    position: absolute;
+}
+.banner .pointer{
+    position: absolute;
+    bottom: 22px;
+    right: 35px;
+}
+.banner .pointer a{
+    float: left;
+    width: 5px;
+    height: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px rgba(255, 255, 255, 0.4) solid;
+    border-radius: 50%;
+    margin-left: 6px;
+}
+.banner .pointer .active,
+.banner .pointer a:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 2px rgba(0, 0, 0, 0.4) solid;
+}
+.prev-next a{
+    position: absolute;
+    width: 41px;
+    height: 69px;
+    background-image: url(../img/icon-slides.png);
+    bottom: 0;
+    top: 0;
+    margin: auto 0;
+}
+.prev-next .prev{
+    left: 234px;
+    background-position: -84px;
+}
+.prev-next .next{
+    right: 0;
+    background-position: -125px 0;
+}
+.prev-next .prev:hover{
+    background-position: 0 0;
+}
+.prev-next .next:hover{
+    background-position: -42px 0;
+}
+.back-top{
+    width: 26px;
+    height: 206px;
+    background-color: teal;
+    position: fixed;
+    bottom: 60px;
+    right: 50%;
+    margin-right: -639px;
+}
+.ad{
+    height: 170px;
+    margin-top: 14px;
+}
+.ad .shortcut,
+.ad .ad-img,
+.ad li{
+    float: left;
+}
+.ad .shortcut{
+    width: 228px;
+    height: 168px;
+    background-color: #5f5750;
+    margin-right: 14px;
+    padding-top: 2px;
+    padding-left: 6px;
+}
+.ad .ad-img li{
+    margin-right: 15px;
+}
+.ad .ad-img li:last-child{
+    margin-right: 0px;
+}
+.ad .ad-img img{
+    width: 316px;
+    vertical-align: top;
+}
+.ad .shortcut a{
+    color: #cfccca;
+    display: block;
+    width: 76px;
+    height: 84px;
+    font-size: 12px;
+    overflow: hidden;
+    text-align: center;
+}
+.ad .shortcut i{
+    display: block;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 7px;
+}
+.ad .shortcut a:hover{
+    color: white;
+}
+.ad .shortcut li{
+    position: relative;
+}
+.ad .shortcut li::before{
+    content: '';
+    width: 64px;
+    height: 1px;
+    background-color: #665e57;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.ad .shortcut li::after{
+    content: '';
+    width: 1px;
+    height: 70px;
+    background-color: #665e57;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto 0;
+}

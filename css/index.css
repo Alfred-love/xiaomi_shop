@@ -1,0 +1,437 @@
+.nav{
+    width: 100%;
+    background-color: #333;
+    height: 40px;
+    line-height: 40px;
+}
+.left,.navz li{
+    float: left;
+}
+.right,.middle{
+    float: right;
+}
+.navz a{
+    font-size: 12px;
+    color: #b0b0b0;
+    display: block;
+}
+.left .line,.middle .line{
+    height: 13px;
+    width: 1px;
+    margin: 13.5px 8px 0;
+    background-color: #424242;
+}
+.navz a:hover{
+    color: #fff;
+}
+.right a{
+    width: 120px;
+    background-color: #424242;
+    text-align: center;
+}
+.right i{
+    margin-right: 2px;
+}
+.right:hover a{
+    background-color: #fff;
+    color: #ff6700;
+}
+.right{
+    margin-left: 20px;
+}
+.xiala{
+    width: 124px;
+    /* height: 148px; */
+    height: 0px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    line-height: 1px;
+    text-align: center;
+    left: -40px;
+    transition: height 0.3s;
+    z-index: 2;
+}
+.xiala img{
+    width: 90px;
+    margin: 17px;
+    margin-top: 10px;
+}
+.xiala span{
+    color: #000;
+    font-size: 14px;
+}
+.app{
+    position: relative;
+}
+.app::after{
+    display: none;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border: solid 7px transparent;
+    border-top: none;
+    border-bottom-color: white;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.app:hover .xiala,.app:hover::after{
+    display: block;
+    height: 148px;
+}
+.da{
+    position: relative;
+}
+.da .xiala2{
+    /* display: none; */
+    width: 300px;
+    /* height: 100px; */
+    height: 0px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: -180px;
+    line-height: 100px;
+    color: black;
+    font-size: 12px;
+    transition: 0.3s;
+    z-index: 2;
+}
+.da:hover .xiala2{
+    display: block;
+    height: 100px;
+}
+.header-wrapper{
+    position: relative;
+}
+.header{
+    height: 100px;
+    /* background-color: teal; */
+}
+.header .logo{
+    float: left;
+    margin-top: 22.5px;
+    width: 55px;
+    height: 55px;
+    position: relative;
+    overflow: hidden;
+    text-indent: -999px;
+}
+.header .logo a{
+    /* display: block; */
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: 0;
+    /* background-color: transparent; */
+    background-image: url(../img/logo-mi2.png);
+    /* background-size: 100%; */
+    background-position: center;
+    background-size: cover;
+    transition: left 0.3s;
+}
+.header .logo .home{
+    background-image: url(../img/OIP-C.jpg);
+    left: -55px;
+}
+.header .logo:hover .mi{
+    left: 55px;
+}
+.header .logo:hover .home{
+    left: 0;
+}
+.header .na-wrapper{
+    float: left;
+}
+.header .na-wrapper li{
+    float: left;
+}
+.header .na{
+    /* width: 850px; */
+    /* width: 792px; */
+    line-height: 100px;
+    /* background-color: teal; */
+    margin-left: 7px;
+    padding-left: 58px
+}
+.header .na li a{
+    color: black;
+    font-size: 16px;
+    margin-right: 20px;
+    display: block;
+    /* margin: 0 10px; */
+}
+/* .header .na li{
+    margin: 0 10px;
+} */
+.all-goods{
+    visibility: hidden;
+}
+.na li a:hover{
+    color: #ff6700;
+}
+.na .goods-info{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    /* height: 228px; */
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    /* box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2); */
+    /* border-top: 1px solid rgb(224, 224, 224); */
+    transition: height 0.3s;
+    z-index: 999;
+}
+.na .show-goods:hover ~ .goods-info,
+.goods-info:hover{
+    height: 228px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgb(224, 224, 224);
+}
+.search-wrapper{
+    width: 296px;
+    height: 50px;
+    float: right;
+    /* background-color: teal; */
+    border: 1px solid rgb(224, 224, 224);
+    /* outline: solid 1px rgb(224, 224, 224); */
+    margin-top: 25px;
+}
+.search-wrapper .search-inp{
+    width: 224px;
+    border: none;
+    float: left;
+    padding: 0px;
+    height: 50px;
+    padding: 0 10px;
+    outline: none;
+}
+.search-wrapper .search-btn{
+    float: left;
+    height: 50px;
+    width: 52px;
+    padding: 0;
+    border: none;
+    background-color: white;
+    font-size: 16px;
+    border-left: 1px solid rgb(224, 224, 224);
+}
+.xiala3{
+    display: none;
+    width: 244px;
+    height: 235px;
+    background-color: #fff;
+    float: left;
+    margin-left: -1px;
+    border: 1px rgb(224, 224, 224) solid;
+    position: absolute;
+    top: 76px;
+    z-index: 8;
+}
+.n a{
+    display: block;
+    font-size: 12px;
+    line-height: 30px;
+    padding-left: 15px;
+}
+.n li:hover{
+    background-color: rgb(196, 190, 190);
+}
+.search-wrapper:hover .xiala3{
+    display: block;
+    border: 1px red solid;
+}
+.search-wrapper:hover{
+    border: 1px red solid;
+}
+.search-wrapper:hover .search-btn{
+    border-left: 1px red solid;
+}
+.search-wrapper .search-inp:focus{
+    outline: 1px solid #ff6700;
+    position: absolute;
+    z-index: 1;
+}
+.search-wrapper .search-btn:hover{
+    background-color: #ff6700;
+    color: white;
+}
+.na .left-menu{
+    /* display: none; */
+    width: 234px;
+    height: 420px;
+    background-color: rgba(0, 0, 0, 0.6);
+    line-height: 1;
+    position: absolute;
+    left: -120px;
+    padding: 20px 0;
+    z-index: 100;
+}
+.na .all-goods-wrapper{
+    position: relative;
+}
+.na .left-menu li{
+    float: none;
+}
+.na .left-menu li a{
+    display: block;
+    line-height: 42px;
+    color: white;
+    font-size: 16px;
+    padding: 0 30px;
+    margin-right: 0;
+}
+.na .left-menu li i{
+    float: right;
+    line-height: 42px;
+}
+/* .all-goods-wrapper:hover .left-menu{
+    display: block;
+} */
+.na .left-menu li:hover{
+    color: white;
+    background-color: #ff6700;
+}
+.banner-wrapper .banner img{
+    width: 100%;
+    vertical-align: top;
+}
+.banner{
+    position: relative;
+    height: 460px;
+}
+.img-list li{
+    position: absolute;
+}
+/* .img-list .two{
+    z-index: 1;
+} */
+.pointer{
+    position: absolute;
+    bottom: 22px;
+    right: 35px;
+}
+.pointer a{
+    float: left;
+    width: 5px;
+    height: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    margin-left: 6px;
+}
+.pointer a:hover,
+.pointer .active{
+    background-color: rgba(255, 255, 255, 0.4);
+    border: rgba(0, 0, 0, 0.4) 2px solid;
+}
+.prev-next a{
+    width: 41px;
+    height: 69px;
+    background-image: url(../img/icon-slides.png);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+.prev-next .prev{
+    left: 234px;
+    background-position: -84px 0;
+}
+.prev-next .next{
+    right: 0;
+    background-position: -125px 0;
+}
+.prev-next .prev:hover{
+    background-position: 0 0;
+}
+.prev-next .next:hover{
+    background-position: -42px 0;
+}
+.back-top{
+    width: 26px;
+    height: 206px;
+    background-color: teal;
+    position: fixed;
+    bottom: 60px;
+    right: 50%;
+    margin-right: -639px;
+}
+body .ad{
+    margin-top: 14px;
+    height: 170px;
+}
+.ad .shortcut,
+.ad .ad-img,
+.ad li{
+    float: left;
+}
+.ad .shortcut{
+    width: 228px;
+    height: 168px;
+    background-color: #5f5750;
+    margin-right: 14px;
+    padding-left: 6px;
+    padding-top: 2px;
+}
+.ad .ad-img li{
+    width: 316px;
+    margin-right: 15px;
+}
+.ad .ad-img li:last-child{
+    margin-right: 0;
+}
+.ad .ad-img li img{
+    width: 100%;
+    vertical-align: top;
+}
+.ad .shortcut a{
+    color: #cfccca;
+    display: block;
+    width: 76px;
+    height: 84px;
+    text-align: center;
+    font-size: 12px;
+    overflow: hidden;
+}
+.ad .shortcut a i{
+    font-size: 20px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.ad .shortcut a:hover{
+    color: white;
+}
+.ad .shortcut li{
+    position: relative;
+}
+.ad .shortcut li::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 64px;
+    background-color: #665e57;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.ad .shortcut li::after{
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 1px;
+    background-color: #665e57;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto 0;
+}
